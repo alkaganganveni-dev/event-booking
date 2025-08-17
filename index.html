@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Event Booking</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+    }
+
+    /* Hero section */
+    .hero {
+      height: 70vh;
+      background: url('https://images.pexels.com/photos/169190/pexels-photo-169190.jpeg?auto=compress&cs=tinysrgb&w=1200') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background: #e91e63;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .btn:hover {
+      background: #c2185b;
+    }
+
+    /* Services */
+    .services {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .services h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      padding: 10px;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Plan Your Perfect Event 🎉</h1>
+      <p>Book halls, caterers, DJs, decorators & more – all in one place!</p>
+      <button class="btn">Start Booking</button>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services">
+    <h2>Explore Our Services</h2>
+    <div class="grid">
+      <!-- Hall -->
+      <div class="card">
+        <img src="https://images.pexels.com/photos/696218/pexels-photo-696218.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Hall">
+        <h3>Halls</h3>
+      </div>
+
+      <!-- Catering -->
+      <div class="card">
+        <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Catering">
+        <h3>Catering</h3>
+      </div>
+
+      <!-- DJ -->
+      <div class="card">
+        <img src="https://images.pexels.com/photos/164879/pexels-photo-164879.jpeg?auto=compress&cs=tinysrgb&w=600" alt="DJ">
+        <h3>DJ & Music</h3>
+      </div>
+
+      <!-- Decoration -->
+      <div class="card">
+        <img src="https://images.pexels.com/photos/713148/pexels-photo-713148.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Decoration">
+        <h3>Decoration</h3>
+      </div>
+
+      <!-- Photography -->
+      <div class="card">
+        <img src="https://images.pexels.com/photos/167832/pexels-photo-167832.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Photography">
+        <h3>Photography</h3>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
